@@ -1,0 +1,667 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan&family=Montserrat&display=swap');
+
+* {
+  font-family: 'League Spartan', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'League Spartan';
+  font-family: 'Montserrat';
+}
+
+.wrapper {
+  position: relative;
+  max-width: 2000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#logo-sportwave {
+  height: 80px;
+  max-width: 250px;
+  min-width: 250px;
+  width: 20vw;
+}
+
+#search {
+  padding-left: 20px;
+  height: 55px;
+  padding-bottom: -19px;
+  width: 66%;
+  font-size: 16px;
+  border-radius: 10px;
+  border-color: #32D0F2;
+  border-style: solid;
+  flex-shrink: 0;
+}
+
+#pesquisar {
+  width: 70%;
+  text-align: center;
+}
+
+.profile {
+  height: 36px;
+  width: 36px;
+}
+
+.cart {
+  height: 36px;
+  width: 36px;
+}
+
+.heart {
+  height: 35px;
+  width: 35px;
+}
+
+
+header {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+}
+
+
+#header {
+  display: flex;
+  align-items: center;
+  padding: 0px 65px;
+  background-color: #ffffff;
+  z-index: 999;
+  position: sticky;
+  top: 0;
+  left: 0;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  width: 2000px;
+  justify-content: center;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: #000000;
+}
+
+#navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* gap: 0 10%; */
+  text-align: center;
+  background-color: #000000;
+  height: 50px;
+  max-width: 2000px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0 7%;
+  text-align: center;
+  /* background-color: #000000; */
+  height: 5px;
+  width: 93vw;
+  max-width: 2000px;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+}
+
+#navbar li {
+  list-style: none;
+  padding: 0 10px;
+  position: relative;
+  flex-shrink: 0;
+}
+
+#navbar li a {
+  text-decoration: none;
+  font-family: 'Montserrat';
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+  transition: 0.3s ease;
+  /* row-gap: 66px; */
+}
+
+#LOGO {
+  width: 20vw;
+  max-width: 250px;
+  text-align: center;
+  flex-shrink: 1;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+  color: #32D0F2;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after {
+  content: "";
+  width: 30%;
+  height: 2px;
+  background-color: #32D0F2;
+  position: absolute;
+  bottom: -4px;
+  left: 20px;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  padding-top: 4px;
+  gap: 0%;
+  width: 20vw;
+  height: 55px;
+  max-width: 280px;
+  flex-shrink: 1;
+}
+
+
+#feature {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-content: center;
+  padding-bottom: 5%;
+  padding-top: 3px;
+}
+
+#feature .fe-box>img {
+  width: 230px;
+  height: 210px;
+  display: block;
+}
+
+.fe-box {
+  border-bottom: 3px solid #32D0F2;
+  border-top: 3px solid #32D0F2;
+  padding: 20px 20px;
+  margin: 0 10px;
+  margin-top: 20px;
+}
+
+a:-webkit-any-link {
+  color: white;
+  text-decoration: none;
+}
+
+
+@media (max-width: 657px) {
+  .product-grid {
+    justify-content: center;
+  }
+
+  #header {
+    display: flex;
+    flex-shrink: 1;
+    /* flex-direction: column; */
+  }
+
+  #logo-sportwave {
+    margin-left: 0;
+
+
+    height: 80px;
+    max-width: 250px;
+    min-width: 10px;
+    width: 100px !important;
+    height: auto;
+    width: 2vw;
+    /* margin-right: rem; */
+  }
+
+  .profile {
+    height: 20px;
+    width: 20px;
+  }
+
+  .cart {
+    height: 20px;
+    width: 20px;
+  }
+
+  .heart {
+    height: 19px;
+    width: 19px;
+  }
+
+  .icons {
+    align-items: center;
+  }
+
+  .titleroupas {
+    width: auto;
+    padding: 0;
+    margin: 0%;
+    justify-content: center;
+  }
+
+  .subtitle {
+    width: 100%;
+    padding: 0;
+    margin: 0%;
+    justify-content: center;
+  }
+}
+
+
+svg {
+  position: relative;
+  width: auto;
+  align-self: flex-end;
+}
+
+
+
+@media (max-width:1000px) {
+  #pesquisar {
+    width: 100%;
+    text-align: center;
+    order: 1;
+  }
+
+  #logo-sportwave {
+    margin-left: 0px;
+  }
+
+  #icons {
+    /* margin-right: 40px; */
+    display: flex;
+    justify-content: flex-end;
+    gap: 0 3rem;
+  }
+
+  .icons {
+    /* margin-right: 40px; */
+    display: flex;
+    justify-content: flex-end;
+    gap: 0 3rem;
+  }
+
+  #search {
+    /* padding-left: 20px; */
+    height: 60px;
+    width: 100%;
+    border-radius: 10px;
+    border-color: #32D0F2;
+    border-style: solid;
+    flex-shrink: 0;
+    order: 1;
+  }
+
+  .subtitle {
+    justify-content: center;
+    padding: 0px;
+  }
+
+  .navbar {
+    display: flex;
+    align-items: center;
+    gap: 0 0;
+    text-align: center;
+    background-color: #000000;
+    height: 50px;
+    width: 95vw;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    justify-content: flex-end;
+
+  }
+
+  #header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+  }
+
+  .nav-list {
+    list-style: none;
+    display: flex;
+  }
+
+  .nav-list li {
+    letter-spacing: 3px;
+    margin-left: 32px;
+  }
+
+  .mobile-menu {
+    display: none;
+    cursor: pointer;
+  }
+
+  .mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: #fff;
+    margin: 8px;
+    transition: 0.3s;
+  }
+
+
+
+  .nav-list.active {
+    transform: translateX(0);
+  }
+
+  @keyframes navLinkFade {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  .mobile-menu.active .line1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+  }
+
+  .mobile-menu.active .line2 {
+    opacity: 0;
+  }
+
+  .mobile-menu.active .line3 {
+    transform: rotate(45deg) translate(-5px, -7px);
+  }
+
+}
+
+@media (max-width: 999px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .nav-list {
+    position: absolute;
+    z-index: 999999;
+    top: 17.5vh;
+    right: 0;
+    width: 45vw;
+    height: 83vh;
+    /* height: 80%; */
+    background: #000000;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in;
+  }
+
+  .nav-list li {
+    margin-left: 0;
+    opacity: 0;
+  }
+
+  .mobile-menu {
+    display: block;
+  }
+}
+
+@media (max-width: 600px) {
+
+
+  footer {
+    justify-content: center;
+  }
+
+  footer .col {
+    align-items: flex-start;
+  }
+
+  .wrapper {
+    justify-content: center;
+  }
+}
+
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #464545;
+
+}
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #464545;
+  max-width: 2000px;
+  font-family: 'League Spartan';
+
+}
+
+footer .col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+
+}
+
+
+footer .logo-footer {
+  margin-bottom: 30px;
+  width: 227px;
+  height: 106px;
+}
+
+footer h4 {
+  font-size: 20px;
+  padding-bottom: 20px;
+  color: #0AA1CB;
+  font-family: 'League Spartan';
+
+}
+
+footer p {
+  font-size: 13px;
+  margin: 0 0 0px 0;
+  color: #fff;
+  font-family: 'League Spartan';
+}
+
+footer a {
+  font-size: 15px;
+  text-decoration: none;
+  color: #fff;
+  margin-bottom: 10px;
+  font-family: 'League Spartan';
+
+}
+
+footer .copyright {
+  width: 100%;
+  text-align: center;
+  font-family: 'League Spartan';
+
+}
+
+footer .col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 25px;
+}
+
+strong {
+  font-weight: bolder;
+  font-family: 'Montserrat';
+}
+
+
+h2 {
+  display: flex;
+  justify-content: center;
+  color: #ffffff;
+  text-align: center;
+  font-family: 'League Spartan';
+
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: -120px;
+  padding-right: 20px;
+}
+
+.left-side {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 200px;
+}
+
+.itens {
+  align-self: flex-end;
+}
+
+.select-image {
+  max-width: 400px;
+  border: 1px solid #CECECE;
+}
+
+.select-image img {
+  width: 100%;
+  border-radius: 10px;
+  padding-left: 15px;
+}
+
+@media (max-width: 762px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .left-side {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0px;
+  }
+
+  .itens {
+    align-self: center;
+    margin-top: 6rem;
+  }
+}
+
+.thumbnails {
+  display: flex;
+  justify-content: space-evenly;
+  max-width: 400px;
+  gap: 10px;
+}
+
+.thumbnail img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.right-side {
+  margin-left: 100px;
+  width: 100%;
+  margin-bottom: 285px;
+  margin-top: 100px;
+}
+
+.nome-produto {
+  font-size: 25px;
+}
+
+.desconto {
+  color: #8C8C8C;
+  font-size: 25px;
+}
+
+.parcelar {
+  font-size: 25px;
+}
+
+.valor-produto {
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.btns {
+  margin-top: 20px;
+}
+
+.add-carrinho p {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.comprar p {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.comprar {
+  background: #14db1e;
+  width: 50%;
+  border-radius: 10px;
+  min-width: 150px;
+  height: 70px;
+  color: #fff;
+  border: 1px solid #eee;
+  box-shadow: 5px 5px 5px #eee;
+  text-shadow: none;
+  font-size: 30px;
+}
+
+.comprar:hover {
+  background: #0e6d0e;
+  color: #fff;
+  border: 1px solid #eee;
+  /* border-radius: 20px; */
+  box-shadow: 5px 5px 5px #eee;
+  text-shadow: none;
+}
+
+.add-carrinho {
+  background: #30c4e6;
+  margin-top: 15px;
+  width: 50%;
+  min-width: 150px;
+  height: 70px;
+  color: #fff;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px #eee;
+  text-shadow: none;
+  font-size: 30px;
+}
+
+.add-carrinho:hover {
+  background: #0fa7d1;
+  color: #fff;
+  border: 1px solid #eee;
+  box-shadow: 5px 5px 5px #eee;
+  text-shadow: none;
+}
+
+.descricao {
+  max-width: 450px;
+  margin-top: 30px;
+}
