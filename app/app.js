@@ -31,7 +31,7 @@ app.use('/produtos', produtoRouter);
 app.get('/dada', (req, res) => {
   res.render('layouts/index')
 })
-
+ 
 app.listen(port, () => console.info(`App listening on port ${port}`))
 
 // catch 404 and forward to error handler
